@@ -35,6 +35,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true
+    }
 }
 
 dependencies {
@@ -49,4 +53,8 @@ dependencies {
     kapt(libs.hilt.android.compiler)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.ktx)
+    implementation(libs.work.runtime.ktx)
+    implementation(libs.hilt.work)
+    kapt(libs.hilt.compiler)
 }
