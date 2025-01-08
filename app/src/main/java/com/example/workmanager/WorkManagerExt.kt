@@ -1,9 +1,7 @@
-package com.example.workmanager.wokers
+package com.example.workmanager
 
-import android.util.Log
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
-import com.example.workmanager.BlurActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow

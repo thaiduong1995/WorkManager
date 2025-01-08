@@ -16,29 +16,26 @@
 
 package com.example.workmanager
 
-import android.app.Application
 import android.content.ContentResolver
 import android.content.Context
 import android.net.Uri
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import androidx.work.Constraints
 import androidx.work.Data
 import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequest
 import androidx.work.OneTimeWorkRequestBuilder
-import androidx.work.WorkInfo
 import androidx.work.WorkManager
-import com.example.workmanager.wokers.BlurWorker
-import com.example.workmanager.wokers.CleanupWorker
-import com.example.workmanager.wokers.SaveImageToFileWorker
-import com.example.workmanager.wokers.getWorkInfosByTagFlow
+import com.example.workmanager.coroutine_worker.BlurWorker
+import com.example.workmanager.coroutine_worker.CleanupWorker
+import com.example.workmanager.coroutine_worker.SaveImageToFileWorker
+//import com.example.workmanager.wokers.BlurWorker
+//import com.example.workmanager.wokers.CleanupWorker
+//import com.example.workmanager.wokers.SaveImageToFileWorker
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

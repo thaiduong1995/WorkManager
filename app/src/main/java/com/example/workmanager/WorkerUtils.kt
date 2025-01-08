@@ -16,7 +16,7 @@
 
 @file:JvmName("WorkerUtils")
 
-package com.example.workmanager.wokers
+package com.example.workmanager
 
 
 import android.Manifest
@@ -36,14 +36,6 @@ import androidx.annotation.WorkerThread
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.example.workmanager.CHANNEL_ID
-import com.example.workmanager.DELAY_TIME_MILLIS
-import com.example.workmanager.NOTIFICATION_ID
-import com.example.workmanager.NOTIFICATION_TITLE
-import com.example.workmanager.OUTPUT_PATH
-import com.example.workmanager.R
-import com.example.workmanager.VERBOSE_NOTIFICATION_CHANNEL_DESCRIPTION
-import com.example.workmanager.VERBOSE_NOTIFICATION_CHANNEL_NAME
 import java.io.File
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
